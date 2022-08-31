@@ -23,3 +23,17 @@ Route::get('/', function () {
         'content' => 'This is the content of the home page.',
     ]);
 });
+
+Route::get('/products', function () {
+    return view('products', [
+        'title' => 'Products',
+        'content' => 'This is the content of the products page.',
+    ]);
+});
+
+Route::get('/partnership', function () {
+    return view('partnership', [
+        'title' => 'Partnership',
+        'content' => 'This is the content of the partnerships page.',
+    ]);
+});
