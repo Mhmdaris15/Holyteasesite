@@ -19,6 +19,7 @@
         @yield('content')
     </div>
     <script src="bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+    <script src="js/script.js" type="text/javascript"></script>
 </body>
 
 </html>
