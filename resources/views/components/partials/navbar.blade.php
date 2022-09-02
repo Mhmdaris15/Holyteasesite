@@ -2,7 +2,11 @@
     <!-- You must be the change you wish to see in the world. - Mahatma Gandhi -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Holytease.</a>
+            <div class="logo">
+                <a class="navbar-brand" href="#">Holytease.</a>
+                <a class="text">love the skin you're in</a>
+                <a class="empty"></a>
+            </div>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
                 aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
