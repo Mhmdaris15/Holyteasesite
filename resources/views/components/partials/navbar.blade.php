@@ -5,7 +5,6 @@
             <div class="logo">
                 <a class="navbar-brand" href="#">Holytease.</a>
                 <a class="text">love the skin you're in</a>
-                <a class="empty"></a>
             </div>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
                 aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">

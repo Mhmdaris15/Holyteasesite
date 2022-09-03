@@ -2,9 +2,9 @@
 
 @section('content')
 
-<header>
-    <div class="collapse bg-dark" id="navbarHeader">
-        <div class="container">
+<!-- <header>
+    <div class="collapse bg-dark collapse-product" id="navbarHeader">
+        <div class="container container-product">
             <div class="row">
                 <div class="col-sm-8 col-md-7 py-4">
                     <h4 class="text-white">About</h4>
@@ -23,8 +23,8 @@
             </div>
         </div>
     </div>
-    <div class="navbar navbar-dark bg-dark shadow-sm">
-        <div class="container">
+    <div class="navbar navbar-dark bg-dark shadow-sm nav-product">
+        <div class="container container-nav-product">
             <a href="#" class="navbar-brand d-flex align-items-center">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor"
                     stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="me-2"
@@ -40,7 +40,7 @@
             </button>
         </div>
     </div>
-</header>
+</header> -->
 
 <main>
 

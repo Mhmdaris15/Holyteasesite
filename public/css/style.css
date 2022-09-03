@@ -1,5 +1,9 @@
+html {
+    overflow-x: hidden;
+}
 body {
     background-color: #f1cfb6;
+    overflow-x: hidden;
 }
 
 /* ! CUSTOMIZE PRODUCTS */
@@ -143,13 +147,18 @@ body {
     text-decoration: none;
     color: white;
 }
+.navbar .container-fluid .navbar-brand {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
 
 @media (min-width: 992px) {
     .navbar-nav {
         text-align: center !important;
         background-color: #fe661f;
         margin-top: 60px;
-        position: absolute;
+        position: relative;
         border-radius: 40px;
         text-transform: uppercase;
         padding: 0 10px;
@@ -160,34 +169,37 @@ body {
     .container-md,
     .container-sm {
         max-width: 100% !important;
-        padding: 0 6px;
+        padding: 0 0px;
     }
 
     .collapse {
         position: absolute;
-        /* justify-content: center;
-        margin-right: 100px; */
-        left: 25%;
+        left: 27vw;
     }
     .container-fluid {
         display: flex;
     }
     .navbar .container-fluid .text {
         display: block;
-        /* position: absolute;
-        top: 10px;
-        left: 500px; */
         text-transform: uppercase;
         font-size: 1.1em;
         font-weight: bold;
-        margin-right: 13%;
+        margin-bottom: 10px;
     }
     .container-fluid .logo {
         width: 100%;
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
     }
 }
+
+@media (max-width: 1075px) {
+    .collapse {
+        position: absolute;
+        left: 22vw;
+    }
+}
+/* !--------------------------------------------------------------------------------------------- HOME ----------------------------------- */
 
 .container-home {
     height: 200vh;
