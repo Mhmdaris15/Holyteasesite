@@ -1,9 +1,9 @@
-html {
+/* html {
     overflow-x: hidden;
-}
+} */
 body {
     background-color: #f1cfb6;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 
 /* ! CUSTOMIZE PRODUCTS */
@@ -140,6 +140,11 @@ body {
     text-align: center !important;
     position: relative;
     margin-bottom: 20px;
+    padding: 10px 0;
+}
+
+.navbar .logo .holylogo {
+    width: 3.5em;
 }
 
 .navbar .container-fluid .text {
@@ -164,12 +169,15 @@ body {
         padding: 0 10px;
         z-index: 2;
     }
-    .container,
-    .container-lg,
-    .container-md,
-    .container-sm {
-        max-width: 100% !important;
-        padding: 0 0px;
+    .navbar-nav .nav-link {
+        color: #ffffffb2 !important;
+        transition: 0.3s ease;
+    }
+    .navbar-nav .nav-link.active {
+        color: white !important;
+    }
+    .navbar-nav .nav-link:hover {
+        color: white !important;
     }
 
     .collapse {
@@ -195,16 +203,241 @@ body {
 
 @media (max-width: 1075px) {
     .collapse {
-        position: absolute;
         left: 22vw;
     }
 }
 /* !--------------------------------------------------------------------------------------------- HOME ----------------------------------- */
 
 .container-home {
-    height: 200vh;
+    /* height: 200vh; */
+    background-color: #517d40;
+    margin-top: -100px;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .carousel-home {
     margin-top: -20px;
+    z-index: -1;
+}
+
+.carousel-home .carousel-item img {
+    width: 100%;
+    object-fit: cover;
+}
+.container,
+.container-lg,
+.container-md,
+.container-sm {
+    max-width: 100% !important;
+    padding: 0 0px;
+}
+
+.container-home .main {
+    width: 90%;
+    margin-top: 30px;
+}
+
+.container-home .main .box1 {
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    font-weight: bold;
+}
+
+.container-home .main .box1 .text {
+    font-size: 2em;
+    line-height: 2rem;
+}
+
+.container-home .main .box1 .story {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    color: #517d40;
+    padding: 3px 20px;
+    background-color: #fff;
+    border-radius: 30px;
+    text-decoration: none;
+    margin-top: 2rem;
+}
+
+.container-home .main .box2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #cf578a;
+    border-radius: 20px;
+    color: #ffff;
+    min-height: 5em;
+    margin-top: 15px;
+}
+
+.container-home .main .box2 .box2-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 4em;
+}
+
+.container-home .main .box2 .box2-item .icon {
+    width: 4em;
+    height: 4em;
+}
+
+.container-home .main .box2 .box2-item .caption {
+    /* display: flex; */
+    width: 80px;
+    line-height: 1rem;
+}
+
+.container-home .main .box3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    height: 60em;
+    gap: 10px;
+}
+
+.container-home .main .box3 .col1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    gap: 10px;
+}
+
+.container-home .main .box3 .col1 .pict1 {
+    width: 100%;
+    height: 60%;
+    background-color: orange;
+    border-radius: 40px;
+    position: relative;
+    overflow: hidden;
+}
+
+.container-home .main .box3 .col1 .pict2 {
+    width: 100%;
+    height: 40%;
+    background-color: whitesmoke;
+    border-radius: 40px;
+    position: relative;
+    overflow: hidden;
+}
+
+.container-home .main .box3 .col2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    gap: 10px;
+}
+
+.container-home .main .box3 .col2 .pict1 {
+    width: 100%;
+    height: 30%;
+    background-color: orange;
+    border-radius: 40px;
+    position: relative;
+    overflow: hidden;
+}
+
+.container-home .main .box3 .col2 .pict2 {
+    width: 100%;
+    height: 70%;
+    background-color: whitesmoke;
+    border-radius: 40px;
+    position: relative;
+    overflow: hidden;
+}
+
+.container-home .main .box3 .col3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    gap: 10px;
+}
+
+.container-home .main .box3 .col3 .pict1 {
+    width: 100%;
+    height: 45%;
+    background-color: orange;
+    border-radius: 40px;
+    position: relative;
+    overflow: hidden;
+}
+
+.container-home .main .box3 .col3 .pict2 {
+    width: 100%;
+    height: 55%;
+    background-color: whitesmoke;
+    border-radius: 50px;
+    position: relative;
+    overflow: hidden;
+}
+
+.container-home .main .box3 img {
+    position: absolute;
+    object-fit: cover;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.container-home .main .box4 {
+    height: 35em;
+    margin-top: 10px;
+    border-radius: 40px;
+    background-color: red;
+    position: relative;
+    background-image: url(/img/example2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.container-home .main .box4 img {
+    position: absolute;
+    object-fit: cover;
+}
+
+@media (min-width: 992px) {
+    .carousel-home .carousel-item {
+        height: 43rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .container-home .main .box1 {
+        flex-direction: column;
+    }
+    .container-home .main .box1 .story {
+        margin-top: 20px;
+    }
+    /* .container-home .main .box3 {
+        flex-wrap: wrap;
+        min-height: 0em;
+    }
+    .container-home .main .box3 .col1 .pict1,
+    .container-home .main .box3 .col1 .pict2,
+    .container-home .main .box3 .col2 .pict1,
+    .container-home .main .box3 .col2 .pict2,
+    .container-home .main .box3 .col3 .pict1,
+    .container-home .main .box3 .col3 .pict2 {
+        height: 30%;
+    }
+    .container-home .main .box4 {
+        height: 20em;
+    } */
 }
