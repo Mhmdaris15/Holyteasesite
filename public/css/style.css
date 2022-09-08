@@ -419,13 +419,22 @@ body {
 .container-home .main .box3 .col2 > div img:hover,
 .container-home .main .box3 .col3 > div img:hover {
     opacity: 35%;
-    /* background-color: black; */
 }
 
 @media (min-width: 992px) {
     .carousel-home .carousel-item {
         height: 100vh;
     }
+    .container-home .main .box4 {
+        height: 35em;
+        margin-top: 10px;
+        border-radius: 2em;
+        background-color: red;
+        position: relative;
+        background-image: url(/img/example2.jpg);
+        background-size: cover;
+        background-position: center;
+     }    
 }
 
 @media (max-width: 992px) {
@@ -535,6 +544,8 @@ body {
         left: 50%;
         transform: translate(-50%, -50%);
     }
+    .container-home .main .box4 {
+        height: 20em;    
 }
 
 @media (max-width: 615px) {
@@ -548,7 +559,7 @@ body {
         align-items: center;
         margin-top: 30px;
         height: 20em;
-        gap: 10px;
+        gap: 7px;
     }
 
     .container-home .main .box3 img {
@@ -558,5 +569,13 @@ body {
     .container-home .main .box3 .col2 > div,
     .container-home .main .box3 .col3 > div {
         border-radius: 1em !important;
+    }
+    .container-home .main .box3 .col1 ,
+    .container-home .main .box3 .col2 ,
+    .container-home .main .box3 .col3  {
+        gap: 7px;
+    }
+    .container-home .main .box4 {
+        height: 15em;
     }
 }
