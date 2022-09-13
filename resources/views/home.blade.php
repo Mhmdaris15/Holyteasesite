@@ -66,20 +66,20 @@
     <div class="main">
         <div class="box1">
             <div class="text">Let's #GrowAndGlow <br>With Tease!</div>
-            <a href="#" class="story">Our Story</a href="#">
+            <a href="#footer" class="story">Our Story</a href="#">
         </div>
 
         <div class="box2">
             <div class="box2-item">
-                <img class="icon" src="" alt="alt"></img>
+                <img class="icon" src="/img/bpom.png" alt="alt"></img>
                 <div class="caption">BPOM Approved</div>
             </div>
             <div class="box2-item">
-                <img class="icon" src="" alt="alt"></img>
+                <img class="icon" src="/img/cruelty.png" alt="alt"></img>
                 <div class="caption">Cruelty Free</div>
             </div>
             <div class="box2-item">
-                <img class="icon" src="" alt="alt"></img>
+                <img class="icon" src="/img/premium.png" alt="alt"></img>
                 <div class="caption">Premium Ingridients</div>
             </div>
         </div>
@@ -99,8 +99,25 @@
             </div>
         </div>
 
-        <div class="box4">
-            <!-- <img src="/img/example2.jpg" alt="" class="bottom"> -->
+        <div class="box4"></div>
+    </div>
+    <div id="footer" class="footer">
+        <div class="mainfoot">
+            <div class="footertitle">Join #GrowAndGlow</div>
+            <div class="caption">Share your story with us, cause your story is your own beauty.</div>
+            <div class="sharestory">Share Your Story, Here</div>
+            <div class="footerbox">
+                <div class="footerlogo">
+                    <img src="/img/holytease-logo.png" alt="" class="logo">
+                </div>
+                <div class="info">
+                    <h1>INFO</h1>
+                    <p>home</p>
+                    <p>product</p>
+                    <p>partnership</p>
+                </div>
+                <div class="copyright">&copy 2022 Tease</div>
+            </div>
         </div>
     </div>
 </div>

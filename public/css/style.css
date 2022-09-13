@@ -140,7 +140,8 @@ body {
     text-align: center !important;
     position: relative;
     margin-bottom: 20px;
-    padding: 10px 0;
+    padding: 20px 0;
+    /* height: 70px; */
 }
 
 .navbar .logo .holylogo {
@@ -162,11 +163,12 @@ body {
     .navbar-nav {
         text-align: center !important;
         background-color: #fe661f;
-        margin-top: 60px;
+        margin-top: 70px;
         position: relative;
         border-radius: 40px;
         text-transform: uppercase;
         padding: 0 10px;
+        font-size: 1.2rem;
         z-index: 2;
     }
     .navbar-nav .nav-link {
@@ -204,20 +206,20 @@ body {
 
 /* !--------------------------------------------------------------------------------------------- HOME ----------------------------------- */
 
+.carousel-home {
+    margin-top: -20px;
+    z-index: -1;
+}
+
 .container-home {
-    /* height: 200vh; */
     background-color: #517d40;
     margin-top: -100px;
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-.carousel-home {
-    margin-top: -20px;
-    z-index: -1;
 }
 
 .carousel-home .carousel-item img {
@@ -255,11 +257,12 @@ body {
     align-items: center;
     height: 30px;
     color: #517d40;
-    padding: 3px 20px;
+    padding: 1.3em 3.5em;
     background-color: #fff;
     border-radius: 30px;
     text-decoration: none;
     margin-top: 2rem;
+    font-size: 1.2em;
 }
 
 .container-home .main .box2 {
@@ -268,9 +271,9 @@ body {
     align-items: center;
     flex-wrap: wrap;
     background-color: #cf578a;
-    border-radius: 20px;
+    border-radius: 40px;
     color: #ffff;
-    min-height: 5em;
+    min-height: 8em;
     margin-top: 15px;
 }
 
@@ -278,18 +281,21 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 4em;
+    height: 6em;
+    padding: 40px;
 }
 
 .container-home .main .box2 .box2-item .icon {
     width: 4em;
-    height: 4em;
+    margin-right: 1.5em;
 }
 
 .container-home .main .box2 .box2-item .caption {
-    /* display: flex; */
     width: 80px;
-    line-height: 1rem;
+    line-height: 1em;
+    font-family: poppins, sans-serif;
+    /* font-size: 2em; */
+    font-size: calc(1em + 1vw);
 }
 
 .container-home .main .box3 {
@@ -393,9 +399,22 @@ body {
     transform: translate(-50%, -50%);
 }
 
+.container-home .main .box3 .col1 > div img,
+.container-home .main .box3 .col2 > div img,
+.container-home .main .box3 .col3 > div img {
+    transition: 0.5s ease;
+}
+
+.container-home .main .box3 .col1 > div img:hover,
+.container-home .main .box3 .col2 > div img:hover,
+.container-home .main .box3 .col3 > div img:hover {
+    opacity: 35%;
+}
+
 .container-home .main .box4 {
     height: 35em;
     margin-top: 10px;
+    margin-bottom: 50px;
     border-radius: 2em;
     background-color: red;
     position: relative;
@@ -409,16 +428,82 @@ body {
     object-fit: cover;
 }
 
-.container-home .main .box3 .col1 > div img,
-.container-home .main .box3 .col2 > div img,
-.container-home .main .box3 .col3 > div img {
-    transition: 0.5s ease;
+.container-home .footer {
+    display: flex;
+    justify-content: center;
+    /* min-height: 100vh; */
+    width: 100%;
+    background-color: #cf578a;
+    color: #ffff;
+    font-size: 30px;
+    font-family: poppins, sans-serif;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
 }
 
-.container-home .main .box3 .col1 > div img:hover,
-.container-home .main .box3 .col2 > div img:hover,
-.container-home .main .box3 .col3 > div img:hover {
-    opacity: 35%;
+.container-home .footer .mainfoot {
+    width: 90%;
+    margin-top: 70px;
+}
+
+.container-home .footer .mainfoot .footertitle {
+    font-size: calc(1em + 1vw);
+    font-weight: bold;
+}
+.container-home .footer .mainfoot .caption {
+    font-size: calc(0.3em + 1vw);
+    opacity: 0.8;
+}
+
+.container-home .footer .mainfoot .sharestory {
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    color: #cf578a;
+    margin-top: 50px;
+    border-radius: 50px;
+    font-size: calc(0.6em + 1vw);
+    padding: 5px 0;
+}
+
+.container-home .footer .mainfoot .footerbox {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin: 150px 0 80px 0;
+    /* width: 500px; */
+    position: relative;
+}
+
+.container-home .footer .mainfoot .footerbox .footerlogo {
+    text-align: left;
+    /* width: 50%; */
+}
+.container-home .footer .mainfoot .footerbox .footerlogo img {
+    width: 150%;
+}
+
+.container-home .footer .mainfoot .footerbox .info {
+    /* width: 50%; */
+    height: 100%;
+    margin-left: 150px;
+    font-family: poppins, sans-serif;
+    /* font-size: 0.8em; */
+    font-size: calc(0.6em + 1vh);
+}
+
+.container-home .footer .mainfoot .footerbox .info p {
+    margin-top: 20px;
+    line-height: 5px;
+    opacity: 0.7;
+    text-transform: capitalize;
+}
+
+.container-home .footer .mainfoot .copyright {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-size: 0.7em;
 }
 
 @media (min-width: 992px) {
@@ -434,7 +519,7 @@ body {
         background-image: url(/img/example2.jpg);
         background-size: cover;
         background-position: center;
-     }    
+    }
 }
 
 @media (max-width: 992px) {
@@ -545,12 +630,16 @@ body {
         transform: translate(-50%, -50%);
     }
     .container-home .main .box4 {
-        height: 20em;    
+        height: 20em;
+    }
 }
 
 @media (max-width: 615px) {
     .container-home .main .box2 {
         padding: 0 50px;
+    }
+    .container-home .main .box2 .box2-item .icon {
+        width: 3.5em;
     }
 
     .container-home .main .box3 {
@@ -570,9 +659,9 @@ body {
     .container-home .main .box3 .col3 > div {
         border-radius: 1em !important;
     }
-    .container-home .main .box3 .col1 ,
-    .container-home .main .box3 .col2 ,
-    .container-home .main .box3 .col3  {
+    .container-home .main .box3 .col1,
+    .container-home .main .box3 .col2,
+    .container-home .main .box3 .col3 {
         gap: 7px;
     }
     .container-home .main .box4 {
