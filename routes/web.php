@@ -24,12 +24,7 @@ Route::get('/', function () {
     ]);
 });
 
-Route::get('/products', function () {
-    return view('products', [
-        'title' => 'Products',
-        'content' => 'This is the content of the products page.',
-    ]);
-});
+Route::get('/products', [ProductController::class, 'index']);
 
 Route::get('/partnership', function () {
     return view('partnership', [

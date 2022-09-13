@@ -61,7 +61,7 @@
             <span class="visually-hidden">Next</span>
         </button> -->
     </div>
-    
+
 <div class="container container-home">
     <div class="main">
         <div class="box1">
