@@ -25,7 +25,7 @@
                             href="/partnership">Partnership</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#footer">#GrowAndGlow</a>
+                        <a class="nav-link" href="/#footer">#GrowAndGlow</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
