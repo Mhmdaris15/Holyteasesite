@@ -9,7 +9,7 @@ class Product extends Model
 {
     use HasFactory;
 
-    private static $products = [
+    static $products = [
         [
             'id' => 1,
             'name' => 'Product 1',
@@ -30,7 +30,7 @@ class Product extends Model
         ],
     ];
 
-    public static function all()
+    static public function allProducts()
     {
         return collect(self::$products);
     }

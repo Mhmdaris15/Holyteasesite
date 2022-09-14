@@ -136,7 +136,7 @@ body {
 
 /* !------------------------------------------------------------------------------------------------- NAVBAR ---------------------------------*/
 .navbar {
-    background-color: #cf578a !important;
+    /*background-color: #cf578a;*/
     text-align: center !important;
     position: relative;
     margin-bottom: 20px;
@@ -294,7 +294,7 @@ body {
     width: 80px;
     line-height: 1em;
     font-family: poppins, sans-serif;
-    /* font-size: 2em; */
+     /*font-size: 2em;*/
     font-size: calc(1em + 1vw);
 }
 

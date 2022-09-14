@@ -1,6 +1,7 @@
 <div>
     <!-- You must be the change you wish to see in the world. - Mahatma Gandhi -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg">
+
         <div class="container-fluid">
             <div class="logo">
                 <a class="navbar-brand" href="#"><img class="holylogo" src="/img/holytease-logo.png" alt="logo-holytease"></a>
