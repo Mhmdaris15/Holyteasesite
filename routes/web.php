@@ -24,11 +24,11 @@ Route::get('/', function () {
     ]);
 });
 
-Route::get('/products', [ProductController::class, 'index']);
-
 Route::get('/partnership', function () {
     return view('partnership', [
         'title' => 'Partnership',
         'content' => 'This is the content of the partnerships page.',
     ]);
 });
+
+Route::resource('products', ProductController::class);
