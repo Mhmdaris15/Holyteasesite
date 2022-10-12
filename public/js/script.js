@@ -1,10 +1,19 @@
-let tpage = document.getElementById("titlePage")
-let home = document.getElementsByClassName("home")
+let title = document.getElementById("titlePage")
+let home = document.getElementById("home")
+let product = document.getElementById("product")
+let partner = document.getElementById("partner")
 
-function test() {
-    alert("hai")
+// if (home.click) {
+//     title.textContent = "Love The Skin You're In"
+// } else if (product.click) {
+//     title.textContent = "Product"
+// } else if (partner.click) {
+//     title.textContent = "Partnership"
+// } else {
+//     title.textContent = "Love The Skin You're In"
+// }
+
+partner.onclick = function () {
+    title.innerHTML = "Partnership"
 }
 
-home.onclick = function () {
-    alert("Hai")
-}

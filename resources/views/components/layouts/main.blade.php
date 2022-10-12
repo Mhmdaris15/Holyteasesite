@@ -23,9 +23,23 @@
         @elseif(Request::is('/'))
             background-color: #cf578a;
         @else
-            background-color: #bb2d3b;
+            background-color: #517D40;
         @endif
         }
+
+        @media (min-width: 992px) {
+            .navbar-nav {
+        @if(Request::is('/products'))
+            background-color: #fe661f;
+        @elseif(Request::is('/'))
+            /* background-color: #fe661f; */
+        @else
+            background-color: #cf578a;
+        @endif
+        }
+        }
+
+
     </style>
 </head>
 
