@@ -47,6 +47,9 @@
     @include('components.partials.navbar')
     <div class="container">
         @yield('content')
+        <a href="#" id="scrollTop">
+            <i class="bi bi-arrow-up">&uarr;</i>
+        </a>
     </div>
     <script src="js/script.js" type="text/javascript"></script>
 </body>
