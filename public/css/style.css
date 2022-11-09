@@ -205,6 +205,7 @@ body {
     position: relative;
     margin-bottom: 20px;
     padding: 15px 0;
+    font-family: montserrat;
     /* height: 70px; */
 }
 
@@ -301,6 +302,8 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    font-family: montserrat;
 }
 
 .container,
