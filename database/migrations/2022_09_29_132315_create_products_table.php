@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string('name', 255);
             $table->string('short_name', 50);
             $table->text('description')->nullable();
-            $table->integer('price');
+            $table->string('price');
             $table->string('ingridients')->nullable();
             $table->string('details')->nullable();
             $table->string('model_image');
