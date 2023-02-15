@@ -100,6 +100,10 @@
         /*overflow: hidden;*/
         background-position: center;
         background-size: cover;
+<<<<<<< HEAD
+=======
+        cursor: pointer;
+>>>>>>> 8b9604006f270f14b8794cda478172bd193682cd
         /*background-image: url("https://images.unsplash.com/photo-1416339306562-f3d12fefd36f?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&s=263af33585f9d32af39d165b000845eb");*/
     }
 
@@ -188,15 +192,27 @@
 
     <div class="product-container row m-auto text-center d-flex justify-content-center">
         @foreach($products as $product)
+<<<<<<< HEAD
         <div style="background: url('img/{{ $product->model_image }}'); background-size: cover"
+=======
+        <a href="{{ url("/products/{$product->id}") }}" style="background: url('{{ $product->model_image }}');
+            background-size: cover"
+>>>>>>> 8b9604006f270f14b8794cda478172bd193682cd
             class="product col-lg-3-5 col-sm-5 col-xs- m-auto position-relative mb-2">
             <div style="background-color: #CF578A"
                 class="product-name text-light position-absolute start-50 translate-middle m-auto rounded-pill w-75 pt-2">
                 {{ $product->short_name }}
+<<<<<<< HEAD
                 <div style="background-color: #FE661F" class="price m-auto rounded-pill w-75">Rp {{ $product->price }},-
                 </div>
             </div>
         </div>
+=======
+                <div style="background-color: #FE661F" class="price m-auto rounded-pill w-75">{{ $product->price }}
+                </div>
+            </div>
+        </a>
+>>>>>>> 8b9604006f270f14b8794cda478172bd193682cd
         @endforeach
     </div>
 </main>

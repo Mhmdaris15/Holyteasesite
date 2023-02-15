@@ -50,7 +50,11 @@ class ProductController extends Controller
      */
     public function show(Product $product)
     {
+<<<<<<< HEAD
 
+=======
+        //
+>>>>>>> 8b9604006f270f14b8794cda478172bd193682cd
         return view('product', [
             'title' => 'Product',
             'product' => $product,
