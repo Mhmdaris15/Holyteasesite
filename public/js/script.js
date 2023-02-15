@@ -3,6 +3,20 @@ let home = document.getElementById("home")
 let product = document.getElementById("product")
 let partner = document.getElementById("partner")
 
+let btnBenefit = document.getElementById("btnBenefits")
+let btnDetail = document.getElementById("btnDetails")
+let colBenefit = document.getElementsByClassName('.col-benefits')
+let colDetail = document.getElementsByClassName('.col-details')
+let btnDrop = document.getElementsByClassName('.btn-drop')
+
+btnDetail.onclick = function () {
+    $('.collapse').collapse('hide')
+}
+
+btnBenefit.onclick = function () {
+    $('.collapse').collapse('hide')
+}
+
 // if (home.click) {
 //     title.textContent = "Love The Skin You're In"
 // } else if (product.click) {

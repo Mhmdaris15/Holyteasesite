@@ -16,30 +16,24 @@
     <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap-reboot.min.css">
     <script src="bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/product.css">
     <style>
         .navbar {
-        @if(Request::is('/products'))
-            background-color: #fe661f;
-        @elseif(Request::is('/'))
-            background-color: #cf578a;
-        @else
-            background-color: #517D40;
-        @endif
+            @if(Request::is('/products')) background-color: #fe661f;
+            @elseif(Request::is('/')) background-color: #cf578a;
+            @else background-color: #517D40;
+            @endif
         }
 
         @media (min-width: 992px) {
             .navbar-nav {
-        @if(Request::is('/products'))
-            background-color: #fe661f;
-        @elseif(Request::is('/'))
-            /* background-color: #fe661f; */
-        @else
-            background-color: #cf578a;
-        @endif
+                @if(Request::is('/products')) background-color: #fe661f;
+                @elseif(Request::is('/'))
+                /* background-color: #fe661f; */
+                @else background-color: #cf578a;
+                @endif
+            }
         }
-        }
-
-
     </style>
 </head>
 
